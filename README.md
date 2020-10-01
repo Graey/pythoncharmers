@@ -1,2 +1,2 @@
-# pythoncharmers
-Small beginners python programs.
+# Pythoncharmers
+Small beginners python program examples.

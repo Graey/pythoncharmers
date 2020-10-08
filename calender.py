@@ -1,7 +1,2 @@
 import calendar
-
-yy = int(input("Enter year: "))
-mm = int(input("Enter month: "))
-
-
-print(calendar.month(yy, mm))
+print(calendar.month(int(input("enter year")), int(input("enter month"))))

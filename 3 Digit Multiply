@@ -1,0 +1,11 @@
+while True:
+    t= int(input("Enter The Digit:"))
+    t2= int(input("Enter The Digit:"))
+    t3= int(input("Enter The Digit:"))
+    total=t*t2*t3
+    print(t,"*",t2,"*",t3)
+    print("=",total)
+    ch=input("Enter The Digits Again ? (Y/N)")
+    if ch in "Nn":
+        break
+print("OK Bye !! !!")

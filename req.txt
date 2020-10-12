@@ -1,0 +1,5 @@
+tk
+Pillow
+pygame
+curses
+opencv-python

@@ -1,0 +1,11 @@
+while True:
+    tab= int(input("Enter The Number:"))
+    tab2= int(input("Enter The Number:"))
+    tab3= int(input("Enter The Number:"))
+    total=tab-tab2-tab3
+    print(tab,"-",tab2,"-",tab3)
+    print("=",total)
+    ch=input("Enter The Numbers Again ? (Y/N)")
+    if ch in "Nn":
+        break
+print("Thank u Bye !!! !!")

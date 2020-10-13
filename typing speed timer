@@ -1,0 +1,51 @@
+from tkinter import *
+from timeit import default_timer as timer 
+import random 
+   
+window = Tk() 
+  
+window.geometry("1024x768") 
+x = 0
+   
+def game(): 
+    global x 
+    if x == 0: 
+        window.destroy() 
+        x = x+1
+    def check_result(): 
+        if entry.get() == words[word]: 
+            end = timer() 
+            print(end-start) 
+        else: 
+            print("Wrong Input") 
+  
+    words = ['"Have a ducky duck duck live in a bucky cult club."','"Live life with a happy smile only if you can."',
+             '"Chick with a billy nick enjoying a mint killed a tick."'] 
+    word = random.randint(0, (len(words)-1)) 
+    start = timer() 
+    windows = Tk() 
+    windows.geometry("1024x768") 
+    x2 = Label(windows, text=words[word], font="times 30") 
+    x2.place(x=110, y=50) 
+    x3 = Label(windows, text="Start Typing:", font="times 40") 
+    x3.place(x=50, y=150) 
+  
+    entry = Entry(windows, width=35, font="times 25") 
+    entry.place(x=280, y=250) 
+    b2 = Button(windows, text="Submit", 
+                command=check_result, width=16, bg='grey', font="times 15") 
+    b2.place(x=150, y=450) 
+  
+    b3 = Button(windows, text="Wanna Try Again",  
+                command=game, width=16, bg='grey', font="times 15") 
+    b3.place(x=450, y=450) 
+    windows.mainloop() 
+  
+  
+x1 = Label(window, text="Lets Start...", font="times 40") 
+x1.place(x=400, y=200) 
+  
+b1 = Button(window, text="Go", command=game, width=16, bg='grey', font="times 15") 
+b1.place(x=430, y=350) 
+
+window.mainloop()

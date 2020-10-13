@@ -1,0 +1,11 @@
+while True:
+    d= float(input("Enter First Digit:"))
+    d2= float(input("Enter Second Digit:"))
+    d3= float(input("Enter Third Digit:"))
+    Result=d/d2/d3
+    print(d,"/",d2,"/",d3)
+    print("=",Result)
+    ch=input("Enter Digits Again ? (Y/N)")
+    if ch in "Nn":
+        break
+print("Thanks Bye! !!")

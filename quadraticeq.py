@@ -3,9 +3,9 @@
 # import complex math module
 import cmath
 
-a = 1
-b = 5
-c = 6
+a = int(input("Coefficient of X^2"))
+b = int(input("Coefficient of X"))
+c = int(input("Constant))
 
 # calculate the discriminant
 d = (b**2) - (4*a*c)
